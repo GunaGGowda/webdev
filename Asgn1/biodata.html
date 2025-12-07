@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data | My Portfolio</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom right, #e8f2ff, #f9fbff);
+            color: #0d1b3d;
+        }
+
+        /* Navigation */
+        nav {
+            background: #0d47a1;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Page Title */
+        .title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            margin-top: 30px;
+        }
+
+        /* Card Layout */
+        .bio-card {
+            width: 70%;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            color: #0d47a1;
+            margin-top: 30px;
+        }
+
+        h2 img {
+            width: 28px;
+            margin-right: 10px;
+        }
+
+        ul, p {
+            line-height: 1.7;
+            font-size: 17px;
+            margin-left: 20px;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0;
+            color: #2c3e50;
+        }
+
+        .bio-card:hover {
+            transform: scale(1.01);
+            transition: 0.3s;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+        }
+
+/* Decorative circles inside the white card */
+.content-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Big circle */
+.content-container::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: rgba(100, 160, 255, 0.18); /* light blue */
+    border-radius: 50%;
+    top: 80px;
+    right: -60px;
+    z-index: 1;
+}
+
+/* Small circle */
+.content-container::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: rgba(140, 180, 255, 0.25); /* slightly darker light blue */
+    border-radius: 50%;
+    top: 260px;
+    right: 40px;
+    z-index: 1;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-Data</a>
+       <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1 class="title">Bio-Data</h1>
+
+    <!-- Main Card -->
+    <div class="bio-card">
+<div class="content-container">
+
+        <!-- Personal Info -->
+        <h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png">
+            Personal Information
+        </h2>
+        <ul>
+            <li><strong>Name:</strong> Gunashree G Gowda</li>
+            <li><strong>Date of Birth:</strong> 07-12-2004</li>
+            <li><strong>Gender:</strong> Female</li>
+            <li><strong>Nationality:</strong> Indian</li>
+            <li><strong>Languages Known:</strong> Kannada, English</li>
+        </ul>
+
+        <!-- Contact Info -->
+        <h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png">
+            Contact Details
+        </h2>
+        <ul>
+            <li><strong>Phone:</strong> 9876543210</li>
+            <li><strong>Email:</strong> abc123@gmail.com</li>
+            <li><strong>Address:</strong> Bangalore</li>
+        </ul>
+
+        <!-- Family Info -->
+        <h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png">
+            Family Details
+        </h2>
+        <ul>
+            <li><strong>Father's Name:</strong> Gangappa A</li>
+            <li><strong>Mother's Name:</strong> Roopa B</li>
+        </ul>
+
+        <!-- Education -->
+        <h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png">
+            Educational Details
+        </h2>
+        <ul>
+            <li>B.E — Computer Science Engineering (Ongoing)</li>
+            <li>Diploma in CSE — 2024</li>
+            <li>SSLC — 2021</li>
+        </ul>
+
+        <!-- Declaration -->
+        <h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1827/1827924.png">
+            Declaration
+        </h2>
+        <p>
+            I hereby declare that the above information is true and correct to the best of my knowledge.
+        </p>
+
+    </div>
+</div>
+
+    <footer>
+        © 2025 My Portfolio. All rights reserved.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | My Portfolio</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom right, #e8f2ff, #f9fbff);
+            color: #0d1b3d;
+        }
+
+        /* Navigation */
+        nav {
+            background: #0d47a1;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Page Title */
+        .title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            margin-top: 30px;
+        }
+
+        /* Resume Card */
+        .resume-card {
+            width: 70%;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Sections */
+        h2 {
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            color: #0d47a1;
+            margin-top: 30px;
+        }
+
+        h2 img {
+            width: 28px;
+            margin-right: 10px;
+        }
+
+        ul {
+            line-height: 1.7;
+            margin-left: 20px;
+        }
+
+        /* Subtle animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+
+        footer {
+            text-align: center;
+            margin: 40px 0;
+            color: #2c3e50;
+        }
+
+        /* Hover effect for card */
+        .resume-card:hover {
+            transform: scale(1.01);
+            transition: 0.3s;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+        }
+
+/* Decorative circles inside the white card */
+.content-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Big circle */
+.content-container::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: rgba(100, 160, 255, 0.18); /* light blue */
+    border-radius: 50%;
+    top: 80px;
+    right: -60px;
+    z-index: 1;
+}
+
+/* Small circle */
+.content-container::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: rgba(140, 180, 255, 0.25); /* slightly darker light blue */
+    border-radius: 50%;
+    top: 260px;
+    right: 40px;
+    z-index: 1;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="biodata.html">Bio-Data</a>
+       <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1 class="title">My Resume</h1>
+
+    <!-- Resume Card -->
+    <div class="resume-card">
+<div class="content-container">
+
+<div style="position: relative;">
+    <img src="profile.jpg" alt="My Photo"
+         style="
+             width: 150px;
+             height: 150px;
+             border-radius: 100px;
+             position: absolute;
+             top: 0;
+             right: 0;
+             object-fit: cover;
+             border: 2px solid #ccc;
+         ">
+</div>
+
+
+        <!-- Intro -->
+        <p style="font-size: 17px; color:#3a4a6a;">
+            A brief and elegant overview of my education, skills, and projects.
+        </p>
+
+        <!-- Education -->
+        <h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png"> 
+            Education
+        </h2>
+        <ul>
+            <li>B.E in Computer Science Engineering – Ongoing</li>
+            <li>Diploma – 2024</li>
+            <li>SSLC – 2021</li>
+        </ul>
+
+        <!-- Skills -->
+        <h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1827/1827504.png">
+            Technical Skills
+        </h2>
+        <ul>
+            <li>Python </li>
+            <li>HTML, CSS, JavaScript (basics)</li>
+            <li>DBMS, Operating Systems</li>
+        </ul>
+
+        <!-- Projects -->
+        <h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/9068/9068679.png"> 
+            Projects
+        </h2>
+        <ul>
+            <li>Machine Learning mini projects</li>
+            <li>Web Development basic portfolio</li>
+        </ul>
+
+<h2>
+            <img src=https://cdn-icons-png.flaticon.com/128/2912/2912761.png> 
+            Certifications
+        </h2>
+        <ul>
+            <li>Machine Learning</li>
+            <li>Artificial Intelligence: Concepts and Techniques (NPTEL)</li>
+        </ul>
+
+<h2>
+            <img src=https://cdn-icons-png.flaticon.com/128/2912/2912761.png> 
+            Internship
+        </h2>
+        <ul>
+            <li>Machine Learning</li>
+        </ul>
+
+<h2>
+            <img src=jigsaw.png> 
+            Hobbies and Interests
+        </h2>
+        <ul>
+            <li>Solving Suduko Puzzles</li>
+	   <li>Visual arts : Sketching and Painting</li>
+        </ul>
+
+
+    </div>
+</div>
+
+    <footer>
+        © 2025 My Portfolio. All rights reserved.
+    </footer>
+
+</body>
+</html>
