@@ -1,0 +1,255 @@
+/* Global Styling */
+
+h1{
+padding-left: 40px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #0b2e5c;
+}
+
+/* Navigation */
+nav {
+    background: #d7eaff;
+    padding: 20px;
+font-size:20px;
+padding-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0b2e5c;
+    font-weight: bold;
+}
+
+.nav-container {
+    background-color: transparent; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-container a {
+    color: #0b2e5c;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-image {
+    height: 100px;   /* Change size if needed */
+    margin-left: auto;   /* pushes image to the right */
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Background bubble */
+.hero::before {
+    content: "";
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 350px;
+    height: 350px;
+    background: #cfe5ff;
+    border-radius: 50%;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background: #0b2e5c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Hero Image */
+.hero img {
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.about-card {
+    background: white;
+    padding: 30px;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #d7eaff;
+    padding: 15px;
+    text-align: center;
+    color: #0b2e5c;
+    margin-top: 40px;
+}
+
+/* RESUME HEADER */
+.resume-header {
+    background: #e7f1ff;
+    padding: 40px 60px;
+    position: relative;
+}
+
+.resume-header h1 {
+    font-size: 36px;
+    color: #0b2e5c;
+}
+
+.resume-header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Resume Content Section */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+/* Resume Cards */
+.resume-card {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 18px rgba(0,0,0,0.1);
+}
+
+.resume-card h2 {
+    margin-bottom: 12px;
+    color: #0b2e5c;
+}
+
+.resume-card ul li {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+/* Decorative shape */
+.resume-header .circle.small {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    right: 80px;
+    top: 20px;
+    background: #cfe5ff;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+/* ===== CONTACT PAGE ===== */
+
+.contact-page-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Contact Details Box */
+.contact-details-box {
+    background-color: #f3faff;
+    padding: 20px;
+    border-left: 5px solid #0066cc;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* Contact Form Section */
+.contact-form-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-btn {
+    padding: 12px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.contact-btn:hover {
+    background-color: #004a99;
+}
+
